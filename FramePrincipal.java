@@ -190,7 +190,7 @@ public class FramePrincipal extends JFrame {
 	private JTextField nivel;
 	private Panel Defesa;
 	private JLabel label_43;
-	private JTextField textField_9;
+	private JTextField tfCAValue;
 	private JLabel label_73;
 	private JLabel label_113;
 	private JLabel label_114;
@@ -200,13 +200,13 @@ public class FramePrincipal extends JFrame {
 	private JTextField textField_27;
 	private JLabel label_117;
 	private JLabel label_118;
-	private JTextField textField_28;
+	private JTextField tfCAArmor1;
 	private JLabel label_119;
-	private JTextField textField_29;
+	private JTextField tfCAMisc1;
 	private JLabel label_120;
 	private JLabel label_121;
 	private JLabel label_122;
-	private JTextField textField_30;
+	private JTextField tfCAMisc2;
 	private JLabel label_123;
 	private JLabel label_124;
 	private JTextField textField_31;
@@ -251,11 +251,11 @@ public class FramePrincipal extends JFrame {
 	private JLabel label_147;
 	private JTextField textField_48;
 	private JLabel label_148;
-	private JTextField textField_49;
+	private JTextField tfCAClass;
 	private JLabel lblClasse;
 	private JLabel label_150;
 	private JLabel label_151;
-	private JTextField textField_50;
+	private JTextField tfCAShield;
 	private JLabel label_152;
 	private JTextField textField_51;
 	private JButton button;
@@ -304,11 +304,11 @@ public class FramePrincipal extends JFrame {
 		label_43.setBounds(12, 34, 30, 20);
 		Defesa.add(label_43);
 		
-		textField_9 = new JTextField();
-		textField_9.setText("0");
-		textField_9.setColumns(10);
-		textField_9.setBounds(38, 34, 30, 20);
-		Defesa.add(textField_9);
+		tfCAValue = new JTextField();
+		tfCAValue.setText("0");
+		tfCAValue.setColumns(10);
+		tfCAValue.setBounds(38, 34, 30, 20);
+		Defesa.add(tfCAValue);
 		
 		label_73 = new JLabel("Valor");
 		label_73.setFont(new Font("Microsoft YaHei", Font.PLAIN, 11));
@@ -358,22 +358,22 @@ public class FramePrincipal extends JFrame {
 		label_118.setBounds(239, 34, 14, 20);
 		Defesa.add(label_118);
 		
-		textField_28 = new JTextField();
-		textField_28.setText("0");
-		textField_28.setColumns(10);
-		textField_28.setBounds(210, 34, 30, 20);
-		Defesa.add(textField_28);
+		tfCAArmor1 = new JTextField();
+		tfCAArmor1.setText("0");
+		tfCAArmor1.setColumns(10);
+		tfCAArmor1.setBounds(210, 34, 30, 20);
+		Defesa.add(tfCAArmor1);
 		
 		label_119 = new JLabel("Armadura");
 		label_119.setFont(new Font("Microsoft YaHei", Font.PLAIN, 9));
 		label_119.setBounds(202, 11, 50, 20);
 		Defesa.add(label_119);
 		
-		textField_29 = new JTextField();
-		textField_29.setText("0");
-		textField_29.setColumns(10);
-		textField_29.setBounds(247, 34, 30, 20);
-		Defesa.add(textField_29);
+		tfCAMisc1 = new JTextField();
+		tfCAMisc1.setText("0");
+		tfCAMisc1.setColumns(10);
+		tfCAMisc1.setBounds(247, 34, 30, 20);
+		Defesa.add(tfCAMisc1);
 		
 		label_120 = new JLabel("Misc");
 		label_120.setFont(new Font("Microsoft YaHei", Font.PLAIN, 11));
@@ -390,11 +390,11 @@ public class FramePrincipal extends JFrame {
 		label_122.setBounds(280, 34, 14, 20);
 		Defesa.add(label_122);
 		
-		textField_30 = new JTextField();
-		textField_30.setText("0");
-		textField_30.setColumns(10);
-		textField_30.setBounds(288, 34, 30, 20);
-		Defesa.add(textField_30);
+		tfCAMisc2 = new JTextField();
+		tfCAMisc2.setText("0");
+		tfCAMisc2.setColumns(10);
+		tfCAMisc2.setBounds(288, 34, 30, 20);
+		Defesa.add(tfCAMisc2);
 		
 		label_123 = new JLabel("Misc");
 		label_123.setFont(new Font("Microsoft YaHei", Font.PLAIN, 11));
@@ -634,11 +634,11 @@ public class FramePrincipal extends JFrame {
 		label_148.setBounds(317, 34, 14, 20);
 		Defesa.add(label_148);
 		
-		textField_49 = new JTextField();
-		textField_49.setText("0");
-		textField_49.setColumns(10);
-		textField_49.setBounds(325, 34, 30, 20);
-		Defesa.add(textField_49);
+		tfCAClass = new JTextField();
+		tfCAClass.setText("0");
+		tfCAClass.setColumns(10);
+		tfCAClass.setBounds(325, 34, 30, 20);
+		Defesa.add(tfCAClass);
 		
 		lblClasse = new JLabel("Classe");
 		lblClasse.setFont(new Font("Microsoft YaHei", Font.PLAIN, 11));
@@ -655,11 +655,11 @@ public class FramePrincipal extends JFrame {
 		label_151.setBounds(358, 34, 14, 20);
 		Defesa.add(label_151);
 		
-		textField_50 = new JTextField();
-		textField_50.setText("0");
-		textField_50.setColumns(10);
-		textField_50.setBounds(370, 34, 30, 20);
-		Defesa.add(textField_50);
+		tfCAShield = new JTextField();
+		tfCAShield.setText("0");
+		tfCAShield.setColumns(10);
+		tfCAShield.setBounds(370, 34, 30, 20);
+		Defesa.add(tfCAShield);
 		
 		label_152 = new JLabel("+");
 		label_152.setFont(new Font("Microsoft YaHei", Font.PLAIN, 11));
@@ -675,6 +675,7 @@ public class FramePrincipal extends JFrame {
 		button = new JButton("Calcular Defesa");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				//atributos.setCAValue(tfCAValue, tfNivel);
 				
 			}
 		});
